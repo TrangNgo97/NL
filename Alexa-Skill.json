@@ -1,0 +1,110 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "demo",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "call help",
+                        "I do not call function"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "demo",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "State_sl"
+                        }
+                    ],
+                    "samples": [
+                        "turn {state} the fan",
+                        "turn {state} the light",
+                        "open demo"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "no"
+                    ]
+                },
+                {
+                    "name": "HelloIntent",
+                    "slots": [],
+                    "samples": [
+                        "HelloIntent hello",
+                        "HelloIntent how are you"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "State_sl",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "stop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "start"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Device_sl",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "light"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fan"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
